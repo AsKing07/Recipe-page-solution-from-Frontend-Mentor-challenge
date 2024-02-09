@@ -1,4 +1,4 @@
-
+/* Définition des polices */
 @font-face {
     font-family: YoungSerif;
     src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
@@ -8,7 +8,128 @@
     src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
+/* Style du corps de la page */
+body {
+    background-color:  hsl(30, 54%, 90%);
+}
 
+/* Style du conteneur principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%);  text-decoration: node;}
+/* Style de la carte d'information */
+.card {
+    background-color: hsl(0, 0%, 100%);
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+/* Style de l'élément de temps */
+.time {
+    background-color: hsl(30, 54%, 90%);
+    padding: 8%;
+    border-radius: 10px;
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+/* Style de l'image */
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Style du titre */
+h1 {
+    font-family: 'YoungSerif';
+}
+
+/* Style du paragraphe */
+p {
+    font-family: 'Outfit';
+    font-size: 15px;
+}
+
+/* Style du texte en gras */
+span {
+    font-weight: 700;
+    color: hsl(24, 5%, 18%) !important;
+}
+
+/* Style des listes */
+ul, ol {
+    padding-left: 0;
+}
+li {
+    margin-left: 1em;
+}
+li::marker {
+    text-align: center;
+}
+
+/* Style des éléments de texte importants */
+li::marker, h2, .value {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+/* Style de la ligne de séparation */
+.divider {
+    color: black !important;
+    width: 100%;
+    size: 4;
+}
+
+/* Style du tableau */
+table, td, th {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+}
+.tdborder {
+    border-bottom: 1px solid black;
+}
+
+/* Style de l'attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+/* Media queries pour les écrans de taille moyenne et les petits écrans */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        padding: 5%;
+        box-shadow: none;
+    }
+    body {
+        background-color: hsl(0, 0%, 100%);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+        padding: 8%;
+        box-shadow: none;
+    }
+    body {
+        background-color: hsl(0, 0%, 100%);
+    }
+}
