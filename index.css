@@ -120,7 +120,7 @@ table, td, th {
 @media only screen and (max-width: 768px) {
     .card {
         width: 100%;
-        padding: 5%;
+        padding: 0%;
         box-shadow: none;
     }
     body {
@@ -131,7 +131,7 @@ table, td, th {
 @media only screen and (max-width: 480px) {
     .card {
         width: 100%;
-        padding: 8%;
+        padding: 0%;
         box-shadow: none;
     }
     body {
